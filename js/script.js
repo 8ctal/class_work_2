@@ -1,5 +1,5 @@
 
-
+//ITEM 1
 // Call the function when the page is loaded, rest the variables and add the event listeners to the buttons
 window.onload = () => {
     h = 0;
@@ -7,6 +7,7 @@ window.onload = () => {
     s = 0;
     mls = 0;
     timeStarted = 0;
+    // Get the elements from the HTML
     time = document.getElementById("time");
     btnStart = document.getElementById("btn-start");
     btnStop = document.getElementById("btn-stop");
@@ -72,4 +73,25 @@ function reset() {
     s = 0;
     mls = 0;
     btnStart.addEventListener("click", start);
+}
+//ITEM 2
+
+
+function addToList() {
+    let input = document.getElementById("input-Text").value.toLowerCase();
+    const ul = document.getElementById("list");
+    const node = document.createElement("li");
+    if (input != "") {
+        /*OPTIONAL
+        const children = ul.children.length + 1;  //We can use a counter to give the id to the elements
+        node.setAttribute("id", "element" + children);*/   //Assign the id to the element
+        node.appendChild(document.createTextNode(input));
+        ul.appendChild(node);
+        document.getElementById("input-Text").value = "";
+    }
+}
+function deleteLast() {
+    const ul = document.getElementById("list");
+    const last = ul.lastElementChild;
+    ul.removeChild(last);
 }
