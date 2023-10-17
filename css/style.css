@@ -42,8 +42,8 @@ span {
 }
 
 .c-body {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgb(130, 180, 255)70%);
+    background: rgb(165, 213, 238);
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgb(124, 179, 238)70%); */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -56,7 +56,7 @@ span {
     width: 600px;
     height: 250px;
     border-radius: 20px;
-    box-shadow: 11px 17px 22px 0px rgba(59, 59, 59, 0.75);
+    /* box-shadow: 11px 17px 22px 0px rgba(59, 59, 59, 0.75); */
 }
 
 .c-time>.screen {
@@ -90,5 +90,5 @@ button:hover {
     transform: scale(1.2);
     transition: 0.5s;
     background-color: black;
-    color: #fff56d;
+    color: #1da4cd;
 }
